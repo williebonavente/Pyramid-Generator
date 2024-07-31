@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <title>Pattern Generator</title>
+</head>
+
+<body>
+    <div class="glass">
+        <h3>Created by Willie M. Bonavente</h3>
+        <div class="container">
+            <h1>Pyramid Generator</h1>
+            <div>
+                <label for="character">Character:</label>
+                <input type="text" id="character" value="#" maxlength="1">
+            </div>
+            <div>
+                <label for="count">Count:</label>
+                <input type="number" id="count" value="8" min="1">
+            </div>
+            <div class="checkbox-container">
+                <label for="inverted">Inverted: </label>
+                <input type="checkbox" id="inverted" checked>
+            </div>
+            <button onclick="generatePattern()">Generate Pattern</button>
+            <pre id="result"></pre>
+        </div>
+        <script src="./script.js"></script>
+    </div>
+</body>
+
+</html>
